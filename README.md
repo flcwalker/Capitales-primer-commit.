@@ -41,7 +41,7 @@ Las contribuciones al proyecto son bienvenidas. Si deseas colaborar, puedes hace
 
 ## Autor
 
-Este proyecto fue desarrollado por [Tu Nombre].
+Este proyecto fue desarrollado por Nicolás Echavarría.
 
 ---
 
