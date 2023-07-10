@@ -1,0 +1,233 @@
+/* Estilos generales */
+body {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.466);
+  width: 100%;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+select,
+input[type="color"] {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-left: 5px;
+}
+
+input[type="submit"] {
+  font-size: 24px;
+  padding: 10px 20px;
+  margin-top: 30px;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos adicionales para las pantallas */
+.screen {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos adicionales para el menú principal */
+#start-screen {
+  background-image: url("Imagenes/Banderas 1.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#start-screen h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+#scoreboard h2,h3 {
+  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.753);
+}
+
+#scoreboard h2 span,
+#scoreboard h3 span {
+  color: rgb(0, 0, 0);
+}
+
+#start-screen button {
+  font-size: 24px;
+  padding: 22px;
+  margin: 10px;
+  background-color: #4CAF50;
+  border-radius: 7px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 35%;
+  box-shadow: 3px 3px black;
+}
+
+.button-hover {
+  transform: scale(1.2); /* Cambiar el tamaño a 1.2 veces */
+  transition: transform 0.3s ease; /* Agregar una transición suave */
+}
+
+/* Estilo para el contenedor del menú principal */
+#menu {
+  background-image: url("Imagenes/Banderas.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Estilo para el contenedor de los botones */
+#menu-container {
+  margin-bottom: 20px;
+}
+
+/* Estilo para el contenedor de la puntuación */
+#score-container {
+  margin-top: 20px;
+}
+
+#scoreboard {
+  margin-top: 20px;
+}
+
+#scoreboard h2,
+#scoreboard h3 {
+  margin: 5px;
+}
+
+/* Estilos adicionales para el contenedor del juego */
+#game-container {
+  background-color: #ffffff;
+}
+
+#flag-container {
+  margin-bottom: 20px;
+}
+
+#options-container .option {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #f2f2f2;
+  border: 2px solid #4CAF50;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#options-container .option:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#timer-container {
+  margin-top: 10px;
+}
+
+#hint-btn {
+  font-size: 16px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos adicionales para la página de instrucciones */
+#instructions-container {
+  background-color: #ffffff;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#instructions-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#instructions-container ol {
+  padding-left: 20px;
+}
+
+#instructions-container li {
+  margin-bottom: 10px;
+}
+
+#instructions-container button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#instructions-container button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos adicionales */
+body {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: Arial, sans-serif;
+}
+
+#score-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#continent-filter {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#continent-select {
+  margin-left: 10px;
+}
+
+#audio-correct,
+#audio-incorrect {
+  display: none;
+}
+
+.correct-option {
+  background-color: #a8dda8;
+}
+
+.incorrect-message {
+  text-align: center;
+  color: red;
+  margin-top: 20px;
+}
+
+.additional-info {
+  margin-top: 20px;
+}
