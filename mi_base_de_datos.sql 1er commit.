@@ -1,0 +1,37 @@
+  -- Active: 1687130749234@@127.0.0.1@3306
+  -- Crear la base de datos
+  CREATE DATABASE mi_base_de_datos;
+
+  -- Usar la base de datos
+  USE mi_base_de_datos;
+
+  -- Crear la tabla de usuarios
+  CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    password VARCHAR(100) NOT NULL
+  );
+
+  -- Crear la tabla de perfiles
+  CREATE TABLE perfiles (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario_id INT,
+    ciudad VARCHAR(100) NOT NULL,
+    fecha_nacimiento DATE NOT NULL,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+  );
+
+  -- Insertar usuarios
+  INSERT INTO usuarios (nombre, email, password) VALUES
+    ('Usuario 1', 'usuario1@example.com', 'contraseña1'),
+    ('Usuario 2', 'usuario2@example.com', 'contraseña2'),
+    ('Usuario 3', 'usuario3@example.com', 'contraseña3');
+
+  -- Insertar perfiles
+  INSERT INTO perfiles (usuario_id, ciudad, fecha_nacimiento) VALUES
+    (1, 'Ciudad 1', '1990-01-01'),
+    (2, 'Ciudad 2', '1985-05-10'),
+    (3, 'Ciudad 3', '1998-12-15');
+
+
