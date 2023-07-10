@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página de Ejemplo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("Imagenes/Banderas 2.jpg");
+      margin: 0;
+      padding: 20px;
+    }
+
+    .menu-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      background-color: rgba(0, 0, 0, 0.711);
+      font-size: 35px;
+      color: #000000; /* Color verde (#5fa536) asignado al título "Datos" */
+      margin-bottom: 10px;
+      }
+
+    .button-container {
+      text-align: center;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      width: 200px; /* Ancho fijo para los botones */
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .back-button {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-container">
+    <h1>Datos</h1>
+  </div>
+  <div class="button-container">
+    <button onclick="window.location.href='PIB Nominal.html'">PIB nominal</button>
+    <button onclick="window.location.href='PIB per capital.html'">PIB per cápita</button>
+    <button onclick="window.location.href='Población.html'">Población</button>
+  </div>
+  <button class="back-button" onclick="window.location.href='index.html'">Volver al menú principal</button>
+</body>
+</html>
