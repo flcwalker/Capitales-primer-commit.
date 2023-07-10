@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adivina la Capital - Juego</title>
+  <link rel="stylesheet" type="text/css" href="Juego.css">
+</head>
+<body>
+  <div id="game-container">
+    <h1>Adivina la Capital</h1>
+
+    <div class="timer-toggle">
+      <label class="timer-toggle-label">Temporizador:</label>
+      <input type="checkbox" id="timer-toggle" onchange="toggleTimer()">
+    </div>
+
+    <div class="timer-container">
+      <label class="timer-label">Tiempo restante:</label>
+      <span id="timer">60</span>
+    </div>
+
+    <div id="continent-selection">
+      <h2>Selecciona un continente:</h2>
+      <select id="continent-select" onchange="filterByContinent()">
+        <option value="">Todos los continentes</option>
+        <option value="Europa">Europa</option>
+        <option value="América del Sur">América del Sur</option>
+        <option value="Asia">Asia</option>
+        <option value="América Central">América Central</option>
+        <option value="Oceanía">Oceanía</option>
+        <option value="América del Norte">América del Norte</option>
+        <option value="África">África</option>
+      </select>
+    </div>
+
+    <div id="question-container">
+      <div id="flag-container">
+        <img id="flag-image" src="" alt="">
+      </div>
+      <h2 id="question">¿Cuál es la capital de...?</h2>
+      <h3 id="incorrect-title" class="hidden">Respuesta incorrecta. ¡Inténtalo de nuevo!</h3>
+      <div id="options-container"></div>
+      <div id="message-container" class="hidden"></div>
+    </div>
+
+    <div id="score-container">
+      <h3>Puntuación:</h3>
+      <p id="score">0</p>
+    </div>
+  </div>
+
+  <button id="redirect-btn" onclick="window.location.href='index.html'">Inicio</button>
+
+  <audio id="audio-correct" src="Sonidos/Correct.wav"></audio>
+  <audio id="audio-incorrect" src="Sonidos/Error.mp3"></audio>
+
+  <script src="Juego.js" ></script>
+
+</body>
+</html>
