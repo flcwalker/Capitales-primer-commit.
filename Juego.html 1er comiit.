@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Adivina la Capital - Juego</title>
   <link rel="stylesheet" type="text/css" href="Juego.css">
 </head>
+
 <body>
+
   <div id="game-container">
     <h1>Adivina la Capital</h1>
 
@@ -49,11 +52,13 @@
   </div>
 
   <button id="redirect-btn" onclick="window.location.href='index.html'">Inicio</button>
+  <button id="play-again-btn" onclick="window.location.href='index.html'">Juga de nuevo</button>
 
   <audio id="audio-correct" src="Sonidos/Correct.wav"></audio>
   <audio id="audio-incorrect" src="Sonidos/Error.mp3"></audio>
 
-  <script src="Juego.js" ></script>
+  <script src="Juego.js"></script>
 
 </body>
+
 </html>
