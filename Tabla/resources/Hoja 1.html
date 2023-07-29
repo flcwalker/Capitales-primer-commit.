@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tabla Horizontal</title>
+  <link rel="stylesheet" type="text/css" href="sheet.css">
+</head>
+<body>
+  <div class="container">
+    <table>
+        <tr>
+          <th>Variable</th>
+          <th>Descripción</th>
+        </tr>
+        <tr>
+          <td>score</td>
+          <td>Almacena la puntuación actual del jugador.</td>
+        </tr>
+        <tr>
+          <td>currentQuestion</td>
+          <td>Realiza un seguimiento de la pregunta actual en el juego.</td>
+        </tr>
+        <tr>
+          <td>selectedContinent</td>
+          <td>Almacena el continente seleccionado por el jugador.</td>
+        </tr>
+        <tr>
+          <td>questions</td>
+          <td>Una matriz que contiene objetos que representan preguntas con detalles sobre el continente, país, capital, población, idioma, moneda, atracciones y la imagen de bandera correspondiente.</td>
+        </tr>
+        <tr>
+          <td>loadQuestion</td>
+          <td>Carga la siguiente pregunta y opciones de respuesta en la página.</td>
+        </tr>
+        <tr>
+          <td>createOption</td>
+          <td>Crea y devuelve un elemento de opción con el texto proporcionado y la indicación de si es la opción correcta.</td>
+        </tr>
+        <tr>
+          <td>shuffleArray</td>
+          <td>Baraja los elementos en un arreglo de manera aleatoria.</td>
+        </tr>
+        <tr>
+          <td>checkAnswer</td>
+          <td>Verifica la respuesta seleccionada por el jugador y actualiza la puntuación en función de si la respuesta es correcta o incorrecta.</td>
+        </tr>
+        <tr>
+          <td>generateIncorrectOptions</td>
+          <td>Genera opciones incorrectas para una pregunta, excluyendo la opción correcta y basándose en una matriz de atracciones proporcionada.</td>
+        </tr>
+        <tr>
+          <td>getFilteredQuestions</td>
+          <td>Devuelve una matriz de preguntas filtrada según el continente seleccionado.</td>
+        </tr>
+        <tr>
+          <td>filterByContinent</td>
+          <td>Se ejecuta cuando se cambia la selección de continente y actualiza las preguntas y la puntuación en función del continente seleccionado.</td>
+        </tr>
+        <tr>
+          <td>endGame</td>
+          <td>Se ejecuta cuando se completan todas las preguntas y muestra un mensaje de finalización con la puntuación final del jugador.</td>
+        </tr>
+        <tr>
+          <td>DOMContentLoaded</td>
+          <td>Evento que se dispara cuando la página se carga completamente, utilizado para cargar la primera pregunta.</td>
+        </tr>
+      </table>
+  </div>
+</body>
+</html>
+

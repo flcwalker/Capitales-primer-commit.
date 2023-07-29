@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Tareas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Tareas</h1>
+  </header>
+  <main>
+    <div class="container">
+      <div class="column">
+        <h2>Completadas</h2>
+        <table id="completadas">
+          <!-- Filas de tareas completadas se agregarán aquí -->
+        </table>
+      </div>
+      <div class="column">
+        <h2>Pendientes</h2>
+        <table id="pendientes">
+          <!-- Filas de tareas pendientes se agregarán aquí -->
+        </table>
+      </div>
+      <div class="column">
+        <h2>En Progreso</h2>
+        <table id="en-progreso">
+          <!-- Filas de tareas en progreso se agregarán aquí -->
+        </table>
+      </div>
+    </div>
+    <div id="buttons">
+      <button id="agregar-tarea">Agregar Tarea</button>
+      <button id="crear-tabla">Crear Tabla</button>
+      <button id="cargar-tabla">Cargar Tabla</button>
+      <button id="eliminar-tabla">Eliminar Tabla</button>
+    </div>
+    <div id="barra-progreso">
+      <!-- Barra de progreso se mostrará aquí -->
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

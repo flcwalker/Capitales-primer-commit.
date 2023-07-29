@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Configuración - Adivina la Capital</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Configuración</h1>
+
+  <h2>Nivel de dificultad:</h2>
+  <select id="nivel-dificultad">
+    <option value="facil">Fácil</option>
+    <option value="medio">Medio</option>
+    <option value="dificil">Difícil</option>
+  </select>
+
+  <h2>Categorías de preguntas:</h2>
+  <input type="checkbox" id="categoria-paises" checked>
+  <label for="categoria-paises">Países</label>
+
+  <input type="checkbox" id="categoria-continentes" checked>
+  <label for="categoria-continentes">Capitales de continentes</label>
+
+  <input type="checkbox" id="categoria-historicas">
+  <label for="categoria-historicas">Capitales históricas</label>
+
+  <h2>Modo de juego:</h2>
+  <input type="radio" id="modo-contrarreloj" name="modo" checked>
+  <label for="modo-contrarreloj">Contrarreloj</label>
+
+  <input type="radio" id="modo-practica" name="modo">
+  <label for="modo-practica">Modo práctica</label>
+
+  <input type="radio" id="modo-multijugador" name="modo">
+  <label for="modo-multijugador">Multijugador</label>
+
+  <h2>Idioma:</h2>
+  <select id="idioma">
+    <option value="es">Español</option>
+    <option value="en">English</option>
+  </select>
+
+  <h2>Sonidos y efectos:</h2>
+  <input type="checkbox" id="habilitar-sonidos" checked>
+  <label for="habilitar-sonidos">Habilitar sonidos</label>
+
+  <h2>Ayudas y pistas:</h2>
+  <input type="checkbox" id="ayuda-eliminar" checked>
+  <label for="ayuda-eliminar">Ayuda para eliminar opciones</label>
+
+  <input type="checkbox" id="ayuda-pista" checked>
+  <label for="ayuda-pista">Ayuda con pistas</label>
+
+  <h2>Personalización visual:</h2>
+  <input type="color" id="color-fondo" value="#f2f2f2">
+  <label for="color-fondo">Color de fondo</label>
+
+  <input type="submit" value="Guardar" onclick="guardarConfiguracion()">
+</body>
+</html>

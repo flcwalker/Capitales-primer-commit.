@@ -1,0 +1,158 @@
+body {
+  background-image: url(Imagenes/fondo.jpg);
+  zoom: 0.9;
+}
+
+#game-container {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(0, 0, 0, 0.485);
+  margin: 25px auto;
+  width: 50%;
+  overflow: hidden;
+}
+
+#continent-select {
+  width: 170px ;
+  height: 35px;
+  box-shadow: 2px 3px black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+#flag-container {
+  width: 300px;
+  max-width: 300px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#flag-image {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+#question-container {
+  margin-bottom: 20px;
+}
+
+#question {
+  font-size: 24px;
+}
+
+#options-container {
+  margin-top: 20px;
+  width: 28%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 22px;
+}
+
+#incorrect-title {
+  font-weight: bold;
+  color: red;
+  
+}
+
+.option {
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #f2f2f2;
+  border: 2px solid #4CAF50;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.option:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#score-container {
+  background-color: #f2f2f2;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  height: 100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#score {
+  font-size: 36px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+#next-btn {
+  font-size: 24px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  margin-right: 90%;
+  height: 50px;
+}
+
+.timer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.timer-label {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.timer-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.timer-toggle-label {
+  font-size: 20px;
+  margin-right: 10px;
+}

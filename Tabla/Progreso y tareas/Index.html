@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Administrador de Tareas</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Administrador de Tareas</h1>
+
+    <div class="progress-bar">
+      <h1>Barra de Progreso.</h1>
+      <p id="progressPercentage">0%</p>
+      <div id="progressBarFill" class="progress-bar-fill"></div>
+    </div>
+    
+
+    <div class="task-form">
+      <input type="text" id="taskNameInput" class="task-input" placeholder="Nombre de la tarea">
+      <input type="text" id="taskDescriptionInput" class="task-input" placeholder="Descripción de la tarea">
+      <button onclick="addTask()" class="button">Agregar Tarea</button>
+    </div>
+
+    <div class="table-container">
+      <table id="taskTable">
+        <caption>Tabla Tareas Pendientes</caption>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nombre de la Tarea</th>
+            <th>Descripción de la Tarea</th>
+            <th>Acción</th>
+            <th></th> <!-- Nuevo botón -->
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Las filas de las tareas se agregarán dinámicamente aquí -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-container">
+      <table id="taskInProgressTable">
+        <caption>Tabla Tareas en Proceso</caption>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nombre de la Tarea</th>
+            <th>Descripción de la Tarea</th>
+            <th>Acción</th>
+            <th></th> <!-- Nuevo botón -->
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Las filas de las tareas se agregarán dinámicamente aquí -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-container">
+      <table id="taskCompletedTable">
+        <caption>Tabla Tareas Completadas</caption>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nombre de la Tarea</th>
+            <th>Descripción de la Tarea</th>
+            <th>Acción</th>
+            <th></th> <!-- Nuevo botón -->
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Las filas de las tareas se agregarán dinámicamente aquí -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="saved-tables">
+      <h3>Tablas Guardadas</h3>
+      <ul id="savedTablesList"></ul>
+    </div>
+
+    <div>
+      <button onclick="deleteTable()" class="button">Eliminar Tabla</button>
+      <button onclick="saveTable()" class="button">Guardar Tabla</button>
+      <button onclick="createTable()" class="button">Crear Tabla</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

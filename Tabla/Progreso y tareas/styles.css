@@ -1,0 +1,92 @@
+/* Estilos CSS para la tabla y los elementos de la interfaz de usuario */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-input {
+  flex-grow: 1;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  white-space: nowrap;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-size: 22px;
+}
+
+.task-category {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.saved-tables {
+  margin-top: 20px;
+}
+
+.saved-tables h3 {
+  margin-top: 0;
+}
+
+.saved-tables ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.saved-tables li {
+  margin-bottom: 5px;
+}

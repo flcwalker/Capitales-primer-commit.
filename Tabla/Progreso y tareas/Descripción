@@ -1,0 +1,12 @@
+Crear una pagina HTML, CSS y JavaScript con las siguientes instrucciones. La página constará de tres columnas, cada una representando un estado diferente de las tareas: "Tareas Completadas", "Tareas Pendientes" y "Tareas en Progreso". Cada columna contiene una tabla con filas representando tareas individuales.
+
+Las tareas se pueden agregar ingresando un nombre de tarea en el campo de entrada y haciendo clic en el botón "Agregar Tarea". Unicamente cuando una tarea ingrese a la tabla de "Tareas en proceso" Se le pedirá al usuario que ingrese el tiempo estimado para completar la tarea. Quiero que el tiempo solo sea valido en el siguiente formato HH:mm:ss. Si no se proporciona un tiempo válido, se establecerá un valor predeterminado de 60 minutos. Las tareas se agregarán a la columna de "Tareas Pendientes" inicialmente. DEBE AVER UNA FORMA DE VISUALIZAR LAS TABLAS ALMACENADAS PARA PODER ACCEDER A ELLAS.
+
+Cada fila de la tabla de tareas pendientes y en progreso tiene dos botones: "Eliminar" y "Cambiar Estado". El botón "Eliminar" permite eliminar la tarea correspondiente. El botón "Cambiar Estado" cambia el estado de la tarea entre "pendiente" y "en progreso" o entre "en progreso" y "completada", dependiendo de su estado actual. Además quiero que el programa proporcione funcionalidades adicionales, como crear nuevas tablas de tareas, cargar tablas guardadas, guardar tablas en el almacenamiento local y eliminar tablas existentes.
+
+En la parte superior de la página, habrá una barra de progreso que muestra el porcentaje de tareas completadas en relación con el número total de tareas.
+ 
+.LOS BOTONES "Eliminar" Y "Cambiar Estado" DEBEN SER FUNCIONALES, LO MISMO LOS BOTONES "Crear Nuevas Tablas", "Guardar Tablas", "Cargar Tablas" y "Eliminar Tablas".
+
+.CUANDO SE PRESIONA EL BOTON "Cambiar Estado" los estados de la tareas deben variar entre la "Tareas Pendientes", "Tareas en Proceso" y "Tareas Completadas".
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrador de Tareas</title>
+  <link rel="stylesheet" href="Administrador.css">
+</head>
+
+<body>
+  <h1>Administrador de Tareas</h1>
+
+  <!-- Input for task name -->
+  <input type="text" id="taskInput" placeholder="Ingrese una tarea">
+  <button onclick="addTask()">Agregar Tarea</button>
+
+  <!-- Columns for task states -->
+  <div class="columns">
+    <div class="column" id="columnPending">
+      <h2>Tareas Pendientes</h2>
+      <table id="tablePending">
+        <tr>
+          <th>Tarea</th>
+          <th>Acciones</th>
+        </tr>
+      </table>
+    </div>
+    <div class="column" id="columnInProgress">
+      <h2>Tareas en Progreso</h2>
+      <table id="tableInProgress">
+        <tr>
+          <th>Tarea</th>
+          <th>Tiempo Estimado</th>
+          <th>Acciones</th>
+        </tr>
+      </table>
+    </div>
+    <div class="column" id="columnCompleted">
+      <h2>Tareas Completadas</h2>
+      <table id="tableCompleted">
+        <tr>
+          <th>Tarea</th>
+          <th>Acciones</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Progress bar -->
+  <div class="progress-bar">
+    <div id="progressBar" class="progress-bar-inner"></div>
+  </div>
+
+  <!-- Buttons for additional functionalities -->
+  <div class="buttons">
+    <button onclick="createNewTable()">Crear Nuevas Tablas</button>
+    <button onclick="saveTables()">Guardar Tablas</button>
+    <button onclick="loadTables()">Cargar Tablas</button>
+    <button onclick="deleteTables()">Eliminar Tablas</button>
+  </div>
+
+  <script src="Administrador.js"></script>
+</body>
+
+</html>
