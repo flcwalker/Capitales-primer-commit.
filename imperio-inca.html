@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imperio Inca - Historia y Cultura</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 30px;
+      }
+
+      h1 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 44px;
+        text-align: center;
+        color: #0066cc;
+      }
+
+      h2 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 38px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        color: #009933;
+      }
+
+      p {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+
+      img {
+        max-width: 80vh;
+        max-height: 40vh;
+        margin-bottom: 15px;
+      }
+
+      .emperors-table {
+        margin: 20px 0;
+      }
+
+      .emperors-table th,
+      .emperors-table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .emperors-table th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+
+      .emperors-table tr:hover {
+        background-color: #f5f5f5;
+      }
+
+      .carousel-container {
+        border: ridge 10px rgb(255, 255, 255);
+        width: 405px;
+        height: 285px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+
+      .carousel-slide {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .carousel-slide img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        justify-content: center;
+        background-color: #3939397e;
+      }
+
+      nav button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        width: 120px;
+        margin: 1vh auto;
+        margin-top: 1vh;
+        margin-bottom: 10px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        padding: 12px;
+      }
+
+      nav button:hover {
+        background-color: orange;
+        transform: scale(1.05);
+      }
+
+      .opciones-adicionales {
+        background-color: rgb(43, 43, 43);
+        display: none;
+        position: absolute;
+        left: 390px;
+        top: 70px;
+        z-index: 1;
+        padding: 25px;
+      }
+
+      .opciones-adicionales.visible {
+        display: block;
+      }
+
+      #Geo-btn:hover + .opciones-adicionales {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <button id="Index-btn" onclick="window.location.href='index.html'">
+        Inicio
+      </button>
+
+      <button id="Geo-btn" onclick="window.location.href='Geografía.html'">
+        Geografía
+      </button>
+
+      <ul class="opciones-adicionales hidden">
+        <li>Opción 1</li>
+        <li>Opción 2</li>
+        <li>Opción 3</li>
+      </ul>
+
+      <button id="Emp-btn" onclick="window.location.href='Imperios.html'">
+        Imperios
+      </button>
+      <button id="Hist-btn" onclick="window.location.href='.html'">
+        Historia
+      </button>
+      <button id="Datos-btn" onclick="window.location.href='Datos.html'">
+        Datos
+      </button>
+    </nav>
+
+    <h1>Imperio Inca</h1>
+    <h2>Introducción</h2>
+    <p>
+      El Imperio Inca fue una antigua civilización precolombina que se
+      desarrolló en la región de los Andes en América del Sur. Considerado como
+      el imperio más grande de la época precolombina, los incas lograron un gran
+      dominio territorial y cultural, dejando un legado duradero en la región.
+      Su capital era Cuzco y su territorio se extendía por lo que hoy en día es
+      Perú, Ecuador, Bolivia, Chile y partes de Colombia y Argentina. Los incas
+      destacaron por su impresionante arquitectura, avanzados sistemas agrícolas
+      y eficiente organización política y social.
+    </p>
+
+    <h2>Emperadores del Imperio Inca</h2>
+    <table class="emperors-table">
+      <tr>
+        <th>Nombre del Emperador</th>
+        <th>Dinastía</th>
+        <th>Cronología</th>
+      </tr>
+      <tr>
+        <td>Pachacuti Inca Yupanqui</td>
+        <td>Hanán (Cápac)</td>
+        <td>1438 - 1471</td>
+      </tr>
+      <tr>
+        <td>Topa Inca Yupanqui</td>
+        <td>Hanán (Cápac)</td>
+        <td>1471 - 1493</td>
+      </tr>
+      <tr>
+        <td>Huayna Cápac</td>
+        <td>Hanán (Cápac)</td>
+        <td>1493 - 1525</td>
+      </tr>
+      <tr>
+        <td>Atahualpa</td>
+        <td>Hanán (Cápac)</td>
+        <td>1525 - 1532</td>
+      </tr>
+      <!-- Agrega más filas de emperadores con sus respectivas dinastías y cronologías -->
+    </table>
+
+    <div class="carousel-container">
+      <div class="carousel-slide">
+        <img src="Imagenes/imperio-incaico.jpg" alt="Imagen 1 del carrusel" />
+        <img src="Imagenes/machu_picchu.jfif" alt="Imagen 2 del carrusel" />
+        <img
+          src="Imagenes/Expansion_Imperio_Inca-2-.JPG"
+          alt="Imagen 3 del carrusel"
+        />
+        <img src="Imagenes/guardia_inca.jfif" alt="Imagen 4 del carrusel" />
+        <img src="Imagenes/arquitectura_inca.jpg" alt="Imagen 5 del carrusel" />
+        <img src="Imagenes/prendas_incas.jpg" alt="Imagen 6 del carrusel" />
+        <img src="Imagenes/emperador_inca.jfif" alt="Imagen 7 del carrusel" />
+        <img src="Imagenes/emperador.jpg" alt="Imagen 8 del carrusel" />
+        <!-- Agrega más imágenes al carrusel -->
+      </div>
+    </div>
+
+    <h2>Economía y Agricultura</h2>
+    <p>
+      La economía del Imperio Inca se basaba principalmente en la agricultura,
+      que fue el pilar fundamental para el sustento y desarrollo de esta gran
+      civilización. Los incas demostraron un impresionante conocimiento de los
+      diferentes ecosistemas presentes en su vasto territorio, lo que les
+      permitió desarrollar métodos agrícolas avanzados y adaptados a diversas
+      condiciones climáticas y geográficas. Entre los métodos agrícolas más
+      destacados de los incas se encuentra el sistema de terrazas agrícolas.
+      Mediante la construcción de terrazas en las laderas de las montañas, los
+      incas pudieron cultivar una amplia variedad de alimentos en terrenos que,
+      de otro modo, serían inapropiados para la agricultura. Estas terrazas no
+      solo permitían un uso más eficiente del suelo, sino que también prevenían
+      la erosión y los deslizamientos de tierra, protegiendo así el ecosistema
+      circundante. La papa y la quinua fueron cultivos fundamentales para la
+      alimentación del imperio. Estos alimentos, que aún se consumen en la
+      región andina en la actualidad, fueron cultivados con gran éxito por los
+      incas y desempeñaron un papel crucial en la dieta de la población. Además
+      de la agricultura, el comercio y el sistema de trueque desempeñaron un
+      papel vital en la economía incaica. Los incas establecieron una extensa
+      red de caminos y senderos conocidos como "Qhapaq Ñan", que conectaba los
+      diversos territorios del imperio. A lo largo de estos caminos, se
+      intercambiaban una variedad de bienes y productos entre las diferentes
+      regiones, lo que permitía una distribución equitativa de los recursos y
+      fomentaba la unidad y cohesión del imperio.
+    </p>
+
+    <h2>Arte y Cultura</h2>
+    <p>
+      El arte incaico fue altamente desarrollado y se expresaba en diversas
+      formas, como la cerámica, los textiles y la metalurgia. La cerámica
+      incaica era conocida por su perfección y diseño detallado. Los alfareros
+      incas creaban piezas impresionantes y decorativas, muchas de las cuales
+      tenían un propósito ceremonial y ritual. Los vasos, platos y urnas eran
+      decorados con intrincados motivos geométricos y representaciones de
+      animales y seres humanos. Los textiles incas eran tejidos con gran
+      habilidad y eran considerados como verdaderas obras de arte. Los tejedores
+      incas producían textiles de alta calidad utilizando lana de alpaca y
+      vicuña, que eran teñidas con tintes naturales obtenidos de plantas y
+      minerales. Los textiles se utilizaban para confeccionar ropa y vestimentas
+      ceremoniales para la nobleza y sacerdotes. También se usaban como ofrendas
+      en ceremonias religiosas y para decorar templos y palacios. En el campo de
+      la metalurgia, los incas se destacaron por la utilización de aleaciones
+      como el bronce y el oro. Los orfebres incas creaban objetos ornamentales y
+      herramientas finamente elaboradas, como joyas, máscaras y utensilios de
+      cocina. El trabajo en metal también tenía un importante significado
+      religioso y ceremonial.
+    </p>
+
+    <h2>Arquitectura Inca</h2>
+    <p>
+      La arquitectura incaica es considerada una de las más impresionantes de la
+      antigüedad. Los incas eran maestros constructores y crearon magníficas
+      estructuras que aún asombran al mundo moderno. La ciudad de Cuzco, la
+      capital del imperio, es un ejemplo destacado de la arquitectura incaica.
+      Las edificaciones incas estaban construidas con grandes bloques de piedra
+      que se encajaban con una precisión asombrosa, sin la necesidad de utilizar
+      mortero. Esto permitía que las construcciones fueran resistentes a los
+      terremotos, una característica importante en la región sísmica de los
+      Andes. Machu Picchu, la famosa ciudadela inca ubicada en lo alto de una
+      montaña, es un impresionante ejemplo de la arquitectura incaica. Esta
+      antigua ciudad, considerada Patrimonio de la Humanidad por la UNESCO,
+      muestra el asombroso diseño urbano y la perfecta integración con la
+      naturaleza circundante que caracteriza a la arquitectura inca. Además de
+      las ciudades, los incas construyeron impresionantes templos y fortalezas,
+      como el complejo de Sacsayhuamán cerca de Cuzco. Estas estructuras
+      monumentales reflejan el poder y la sofisticación de la civilización inca.
+      La arquitectura incaica no solo era funcional y estética, sino que también
+      tenía un significado religioso y político. Los templos eran lugares
+      sagrados dedicados a los dioses, y las fortalezas servían como puntos
+      estratégicos para defender el imperio de posibles invasiones.
+    </p>
+
+    <h2>Religión Inca</h2>
+    <p>
+      La religión ocupaba un lugar central en la vida de los incas y era una
+      parte fundamental de su identidad cultural. Los incas adoraban a una
+      variedad de dioses, pero el más importante de todos era Inti, el dios sol.
+      Inti era considerado el antepasado divino de la dinastía imperial y se le
+      atribuía el poder de otorgar vida y fertilidad a la tierra. Cada año, los
+      incas celebraban el Inti Raymi, una importante ceremonia en honor al dios
+      sol durante el solsticio de invierno. Además de Inti, los incas rendían
+      culto a la diosa Pachamama, que personificaba a la Tierra. Pachamama era
+      la madre tierra, fuente de vida y fertilidad. Los incas realizaban
+      rituales y ceremonias en honor a Pachamama, especialmente relacionados con
+      la agricultura y la naturaleza. El Sapa Inca, el emperador, era
+      considerado un descendiente divino de Inti y tenía un papel central en la
+      religión. Se le atribuía la capacidad de comunicarse directamente con los
+      dioses y se le consideraba el intermediario entre el mundo terrenal y el
+      mundo divino. Los sacerdotes y chamanes también desempeñaban un papel
+      importante en la religión incaica. Eran responsables de realizar rituales,
+      interpretar los mensajes de los dioses y predecir el futuro. Los
+      sacerdotes tenían una gran influencia en la vida de la sociedad y a menudo
+      asesoraban al Sapa Inca en asuntos políticos y religiosos. La religión
+      incaica era profundamente espiritual y estaba estrechamente vinculada con
+      la naturaleza y el mundo natural que los rodeaba. Los incas creían en la
+      importancia de mantener un equilibrio armonioso con la naturaleza para
+      asegurar la prosperidad y el bienestar del imperio.
+    </p>
+
+    <h2>Ciencia y Tecnología</h2>
+    <p>
+      Los incas demostraron habilidades avanzadas en ingeniería y medicina, lo
+      que les permitió desarrollar una sociedad próspera y altamente organizada.
+      En el campo de la ingeniería, los incas construyeron una extensa red de
+      caminos y puentes conocida como "Qhapaq Ñan". Esta red de carreteras
+      conectaba las regiones más remotas del imperio, facilitando la
+      comunicación, el comercio y el transporte de mercancías. Los caminos incas
+      eran impresionantes obras de ingeniería, construidos con piedras cortadas
+      y encajadas a la perfección. Estos caminos también incluían puentes
+      colgantes y acueductos que facilitaban el paso sobre ríos y valles. Los
+      incas también desarrollaron sistemas de acueductos y canales para llevar
+      agua a zonas áridas y semidesérticas. Estos sistemas de riego eran vitales
+      para la agricultura y permitían el cultivo de tierras que de otra manera
+      serían improductivas. En el campo de la medicina, los incas desarrollaron
+      conocimientos sobre el uso de plantas medicinales y técnicas quirúrgicas
+      básicas. Los sacerdotes y chamanes eran expertos en el uso de hierbas y
+      plantas para tratar enfermedades y lesiones. También realizaban
+      intervenciones quirúrgicas para el tratamiento de fracturas y heridas. Los
+      conocimientos médicos incas eran transmitidos de generación en generación
+      y jugaban un papel crucial en el bienestar de la sociedad.
+    </p>
+
+    <h2>Declive y Conquista</h2>
+    <p>
+      A pesar de su grandeza, el Imperio Inca enfrentó diversos desafíos que
+      eventualmente contribuyeron a su declive y conquista por parte de los
+      españoles. Uno de los principales desafíos fue el conflicto interno por el
+      poder. A medida que el imperio se expandía, surgieron rivalidades entre
+      diferentes facciones y líderes regionales. Estos conflictos debilitaron la
+      unidad y estabilidad del imperio, lo que facilitó la invasión por parte de
+      los españoles. Además, la llegada de los españoles trajo consigo la
+      propagación de enfermedades europeas, como la viruela y el sarampión, a
+      las cuales los incas no tenían inmunidad. Estas enfermedades diezmaron a
+      la población inca, debilitando aún más al imperio y facilitando su
+      conquista. En 1532, el imperio fue conquistado por los españoles liderados
+      por Francisco Pizarro. La captura del emperador Atahualpa durante la
+      Batalla de Cajamarca marcó el inicio de la conquista española del Imperio
+      Inca. A pesar de los intentos de resistencia, los incas fueron derrotados
+      y su imperio fue incorporado al Virreinato del Perú, bajo el dominio del
+      Imperio Español. La conquista española tuvo un impacto devastador en la
+      población y la cultura incaica. Muchos aspectos de la civilización inca
+      fueron destruidos o reemplazados por las costumbres y tradiciones
+      españolas. Sin embargo, a pesar de la conquista, el legado del Imperio
+      Inca perdura en la cultura, el arte y la arquitectura de la región andina
+      hasta el día de hoy.
+    </p>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const slideContainer = document.querySelector(".carousel-slide");
+        const images = document.querySelectorAll(".carousel-slide img");
+
+        let btn = document.getElementById("Geo-btn");
+        let opciones = document.querySelector(".opciones-adicionales");
+
+        btn.addEventListener("mouseover", function () {
+          opciones.classList.add("visible");
+        });
+
+        btn.addEventListener("mouseout", function () {
+          opciones.classList.remove("visible");
+        });
+
+        // Variables de control
+        let currentIndex = 0;
+        const slideInterval = 3000; // Intervalo de cambio de imagen (3 segundos)
+        let slideIntervalId; // Variable para almacenar el ID del intervalo
+        const lastIndex = images.length - 1; // Índice de la última imagen
+
+        function nextSlide() {
+          currentIndex = (currentIndex + 1) % images.length;
+          if (currentIndex === lastIndex - 1) {
+            currentIndex = 0;
+          }
+          updateSlidePosition();
+          checkForRestart(); // Comprobar si es necesario reiniciar el carrusel
+        }
+
+        function updateSlidePosition() {
+          slideContainer.style.transform = `translateX(-${
+            currentIndex * 100
+          }%)`;
+        }
+
+        // Reiniciar el carrusel después de un tiempo determinado
+        function checkForRestart() {
+          clearInterval(slideIntervalId);
+          slideIntervalId = setInterval(nextSlide, slideInterval);
+        }
+
+        // Iniciar el carrusel
+        function startCarousel() {
+          slideIntervalId = setInterval(nextSlide, slideInterval);
+        }
+
+        // Detener el carrusel cuando el mouse entra en el contenedor
+        slideContainer.addEventListener("mouseenter", function () {
+          clearInterval(slideIntervalId);
+        });
+
+        // Continuar el carrusel cuando el mouse sale del contenedor
+        slideContainer.addEventListener("mouseleave", function () {
+          startCarousel();
+        }); 
+
+        startCarousel(); // Iniciar el carrusel al cargar la página
+      });
+    </script>
+  </body>
+</html>
